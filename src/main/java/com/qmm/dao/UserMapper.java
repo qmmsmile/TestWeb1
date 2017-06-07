@@ -1,17 +1,10 @@
 package com.qmm.dao;
 
+import com.qmm.common.BaseMapper;
 import com.qmm.entity.User;
+import org.springframework.stereotype.Repository;
 
-public interface UserMapper {
-    int deleteByPrimaryKey(Integer id);
+@Repository("userMapper")
+public interface UserMapper extends BaseMapper<User,Integer>{
 
-    int insert(User record);
-
-    int insertSelective(User record);
-
-    User selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(User record);
-
-    int updateByPrimaryKey(User record);
 }

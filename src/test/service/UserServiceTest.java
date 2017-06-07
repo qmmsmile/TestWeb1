@@ -14,9 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 /**
  * Created by Administrator on 2017/6/7.
  */
-@RunWith(SpringJUnit4ClassRunner.class)     //表示继承了SpringJUnit4ClassRunner类
-@ContextConfiguration(locations = {"classpath:conf/spring-mybatis.xml"})
-public class UserServiceTest {
+public class UserServiceTest extends BaseTest{
 
     private static Logger logger = Logger.getLogger(UserServiceTest.class);
 
