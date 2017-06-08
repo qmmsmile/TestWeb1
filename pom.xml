@@ -29,6 +29,7 @@
     <commons-fileupload.version>1.3.1</commons-fileupload.version>
     <commons-io.version>2.4</commons-io.version>
     <commons-codec.version>1.9</commons-codec.version>
+    <mvc.jackson.version>2.6.3</mvc.jackson.version>
   </properties>
 
 
@@ -168,7 +169,13 @@
       <artifactId>commons-codec</artifactId>
       <version>${commons-codec.version}</version>
     </dependency>
-
+    <!--mvc依赖 没有也可以正常运行start-->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${mvc.jackson.version}</version>
+    </dependency>
+    <!--MVC 依赖 end-->
    <!-- <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjrt</artifactId>
