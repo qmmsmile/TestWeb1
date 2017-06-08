@@ -45,6 +45,7 @@ public class UserController {
         myUser.setId(user.getId());
         myUser.setName(user.getUserName());
         myUser.setAge(user.getAge());
+        logger.info("myUser==================>"+myUser.getName());
         return new ResponseMessage().success().packageData("list",myUser);
     }
 }
