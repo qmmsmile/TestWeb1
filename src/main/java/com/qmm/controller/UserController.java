@@ -4,6 +4,7 @@ import com.qmm.common.ResponseMessage;
 import com.qmm.entity.User;
 import com.qmm.service.UserService;
 import com.qmm.vo.MyUser;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +20,8 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/user")
 public class UserController {
 
+    private static Logger logger = Logger.getLogger(UserController.class);
+
     @Autowired
     private UserService userService;
 
@@ -27,6 +30,7 @@ public class UserController {
         int userId = Integer.parseInt(request.getParameter("id"));
         User user = this.userService.getUserById(userId);
         model.addAttribute("user", user);
+        logger.info("user==================>"+user);
         return "showUser";
     }
 
