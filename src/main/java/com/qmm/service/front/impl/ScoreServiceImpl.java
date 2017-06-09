@@ -1,8 +1,8 @@
-package com.qmm.service.font.impl;
+package com.qmm.service.front.impl;
 
-import com.qmm.dao.font.ScoreMapper;
-import com.qmm.entity.font.Score;
-import com.qmm.service.font.ScoreService;
+import com.qmm.dao.front.ScoreMapper;
+import com.qmm.entity.front.Score;
+import com.qmm.service.front.ScoreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

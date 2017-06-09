@@ -1,6 +1,6 @@
-package com.qmm.service.font;
+package com.qmm.service.front;
 
-import com.qmm.entity.font.Score;
+import com.qmm.entity.front.Score;
 
 /**
  * Created by Administrator on 2017/6/9.

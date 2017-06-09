@@ -1,7 +1,7 @@
-package com.qmm.dao.font;
+package com.qmm.dao.front;
 
 import com.qmm.common.BaseMapper;
-import com.qmm.entity.font.Score;
+import com.qmm.entity.front.Score;
 import org.springframework.stereotype.Repository;
 
 @Repository("scoreMapper")

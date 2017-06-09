@@ -24,7 +24,7 @@
     <param-name>contextConfigLocation</param-name>
     <param-value>
       classpath:conf/spring-mybatis-back.xml,
-      classpath:conf/spring-mybatis-font.xml
+      classpath:conf/spring-mybatis-front.xml
     </param-value>
   </context-param>
   <!-- 编码过滤器 -->

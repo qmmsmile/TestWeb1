@@ -2,9 +2,9 @@ package com.qmm.controller;
 
 import com.qmm.common.ResponseMessage;
 import com.qmm.entity.back.User;
-import com.qmm.entity.font.Score;
+import com.qmm.entity.front.Score;
 import com.qmm.service.back.UserService;
-import com.qmm.service.font.ScoreService;
+import com.qmm.service.front.ScoreService;
 import com.qmm.vo.MyUser;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
