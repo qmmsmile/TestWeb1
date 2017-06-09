@@ -1,4 +1,4 @@
-package com.qmm.entity.front;
+package com.qmm.front.entity;
 
 public class Score {
     private Integer id;

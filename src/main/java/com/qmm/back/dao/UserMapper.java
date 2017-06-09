@@ -1,7 +1,7 @@
-package com.qmm.dao.back;
+package com.qmm.back.dao;
 
 import com.qmm.common.BaseMapper;
-import com.qmm.entity.back.User;
+import com.qmm.back.entity.User;
 import org.springframework.stereotype.Repository;
 
 @Repository("userMapper")

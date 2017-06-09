@@ -1,10 +1,10 @@
 package com.qmm.controller;
 
 import com.qmm.common.ResponseMessage;
-import com.qmm.entity.back.User;
-import com.qmm.entity.front.Score;
-import com.qmm.service.back.UserService;
-import com.qmm.service.front.ScoreService;
+import com.qmm.back.entity.User;
+import com.qmm.front.entity.Score;
+import com.qmm.back.service.UserService;
+import com.qmm.front.service.ScoreService;
 import com.qmm.vo.MyUser;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

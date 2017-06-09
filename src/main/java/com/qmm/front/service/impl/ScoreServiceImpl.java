@@ -1,8 +1,8 @@
-package com.qmm.service.front.impl;
+package com.qmm.front.service.impl;
 
-import com.qmm.dao.front.ScoreMapper;
-import com.qmm.entity.front.Score;
-import com.qmm.service.front.ScoreService;
+import com.qmm.front.dao.ScoreMapper;
+import com.qmm.front.entity.Score;
+import com.qmm.front.service.ScoreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  */
 
 @Service("ScoreService")
-public class ScoreServiceImpl implements ScoreService{
+public class ScoreServiceImpl implements ScoreService {
 
     @Autowired
     private ScoreMapper scoreMapper;

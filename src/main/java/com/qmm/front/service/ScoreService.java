@@ -1,6 +1,6 @@
-package com.qmm.service.front;
+package com.qmm.front.service;
 
-import com.qmm.entity.front.Score;
+import com.qmm.front.entity.Score;
 
 /**
  * Created by Administrator on 2017/6/9.

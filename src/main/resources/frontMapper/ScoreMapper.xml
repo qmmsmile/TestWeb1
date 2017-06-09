@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.qmm.dao.front.ScoreMapper" >
-  <resultMap id="BaseResultMap" type="com.qmm.entity.front.Score" >
+<mapper namespace="com.qmm.front.dao.ScoreMapper" >
+  <resultMap id="BaseResultMap" type="com.qmm.front.entity.Score" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="math_score" property="mathScore" jdbcType="INTEGER" />
     <result column="engish_score" property="engishScore" jdbcType="INTEGER" />
@@ -19,13 +19,13 @@
     delete from score
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.qmm.entity.front.Score" >
+  <insert id="insert" parameterType="com.qmm.front.entity.Score" >
     insert into score (id, math_score, engish_score
       )
     values (#{id,jdbcType=INTEGER}, #{mathScore,jdbcType=INTEGER}, #{engishScore,jdbcType=INTEGER}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.qmm.entity.front.Score" >
+  <insert id="insertSelective" parameterType="com.qmm.front.entity.Score" >
     insert into score
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -50,7 +50,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.qmm.entity.front.Score" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.qmm.front.entity.Score" >
     update score
     <set >
       <if test="mathScore != null" >
@@ -62,7 +62,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.qmm.entity.front.Score" >
+  <update id="updateByPrimaryKey" parameterType="com.qmm.front.entity.Score" >
     update score
     set math_score = #{mathScore,jdbcType=INTEGER},
       engish_score = #{engishScore,jdbcType=INTEGER}
