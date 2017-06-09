@@ -1,8 +1,10 @@
 package com.qmm.controller;
 
 import com.qmm.common.ResponseMessage;
-import com.qmm.entity.User;
-import com.qmm.service.UserService;
+import com.qmm.entity.back.User;
+import com.qmm.entity.font.Score;
+import com.qmm.service.back.UserService;
+import com.qmm.service.font.ScoreService;
 import com.qmm.vo.MyUser;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +27,8 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private ScoreService ScoreService;
 
     //前后端不分离
     @RequestMapping(value = "/showUser",method = RequestMethod.GET)
@@ -47,5 +51,13 @@ public class UserController {
         myUser.setAge(user.getAge());
         logger.info("myUser==================>"+myUser.getName());
         return new ResponseMessage().success().packageData("list",myUser);
+    }
+
+    //多数据源
+    @RequestMapping(value = "/score",method = RequestMethod.GET)
+    @ResponseBody
+    public ResponseMessage showScore(Integer id){
+        Score score = this.ScoreService.getScore(id);
+        return new ResponseMessage().success(score);
     }
 }

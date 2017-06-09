@@ -2,8 +2,8 @@ package service;
 
 
 import com.alibaba.fastjson.JSON;
-import com.qmm.entity.User;
-import com.qmm.service.UserService;
+import com.qmm.entity.back.User;
+import com.qmm.service.back.UserService;
 import common.BaseTest;
 import common.JunitTest;
 import org.apache.log4j.Logger;

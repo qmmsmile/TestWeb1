@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
  * Created by Administrator on 2017/6/7.
  */
 @RunWith(SpringJUnit4ClassRunner.class)     //表示继承了SpringJUnit4ClassRunner类
-@ContextConfiguration(locations = {"classpath:conf/spring-mybatis.xml"})
+@ContextConfiguration(locations = {"classpath:conf/spring-mybatis-back.xml"})
 @Transactional
 @TransactionConfiguration(transactionManager = "transactionManager", defaultRollback = true)
 public class BaseTest extends TestCase{

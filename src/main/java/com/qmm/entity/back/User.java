@@ -1,4 +1,4 @@
-package com.qmm.entity;
+package com.qmm.entity.back;
 
 public class User {
     private Integer id;

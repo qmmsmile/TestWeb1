@@ -1,8 +1,8 @@
-package com.qmm.service.impl;
+package com.qmm.service.back.impl;
 
-import com.qmm.dao.UserMapper;
-import com.qmm.entity.User;
-import com.qmm.service.UserService;
+import com.qmm.dao.back.UserMapper;
+import com.qmm.entity.back.User;
+import com.qmm.service.back.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

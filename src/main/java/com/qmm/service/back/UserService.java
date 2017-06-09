@@ -1,6 +1,6 @@
-package com.qmm.service;
+package com.qmm.service.back;
 
-import com.qmm.entity.User;
+import com.qmm.entity.back.User;
 
 /**
  * Created by Administrator on 2017/6/7.
